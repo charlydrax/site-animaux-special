@@ -4,7 +4,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 
-router.register('dragons', AnimalViewSet)
+router.register('animals', AnimalViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

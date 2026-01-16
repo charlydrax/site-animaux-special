@@ -11,4 +11,4 @@ class AnimalViewSet(viewsets.ModelViewSet):
     serializer_class = AnimalSerializers
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['name', 'description']
-    ordering_fields = ['id', 'name', 'taille']
+    ordering_fields = ['id', 'name']
